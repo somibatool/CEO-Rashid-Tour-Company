@@ -3,12 +3,15 @@ import React from 'react'
 const Hero = () => {
   return (
     <>
-      {/* <div className='mb-5'>
-        <h1 className='text-white text-center'>Embrace the North: Mountain Peaks & Autumn Dreams</h1>
-        <p className='text-white text-center'>Discover the magic of the north with our expertly crafted tours. From snow-covered trails to the vibrant hues of autumn, we curate unforgettable experiences that connect you with the raw beauty of the region. Loremplaceat dolorem. Inventore obcaecati nulla dicta, fugit error, eligendieum consequatur, pariatur expedita quam sapiente magni magnam?
-         
-      </p>
-      </div> */}
+      <div className='mt-[100px] px-6 text-center '> {/* Margin-top, padding, and center alignment */}
+  <h1 className='text-white font-bold text-5xl  leading-tight mt-[100px]'> {/* Bigger font size, bold, and line-height */}
+    Explore the World, One Adventure at a Time
+  </h1>
+  <p className='text-white text-lg max-w-2xl mx-auto  '> {/* Centered paragraph with a max width */}
+    Find the best destinations, exclusive deals, and unforgettable experiences, all in one place.
+  </p>
+</div>
+
 
     </>
   )

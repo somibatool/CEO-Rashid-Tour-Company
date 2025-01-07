@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../../assets/logo.png";
 import { NavLink, Link } from "react-router-dom";
-import { FaCaretDown } from "react-icons/fa";
+// import { FaCaretDown } from "react-icons/fa";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 
@@ -22,22 +22,26 @@ export const NavbarLinks = [
     name: "Best Places",
     link: "/best-places",
   },
+  {
+    name: "Contact",
+    link: "/contact",
+  }
 ];
 
-const DropdownLinks = [
-  {
-    name: "Our Services",
-    link: "/#services",
-  },
-  {
-    name: "Top Brands",
-    link: "/#mobile_brands",
-  },
-  {
-    name: "Location",
-    link: "/#location",
-  },
-];
+// const DropdownLinks = [
+//   {
+//     name: "Our Services",
+//     link: "/#services",
+//   },
+//   {
+//     name: "Top Brands",
+//     link: "/#mobile_brands",
+//   },
+//   {
+//     name: "Location",
+//     link: "/#location",
+//   },
+// ];
 
 const Navbar = ({ handleOrderPopup }) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -51,8 +55,8 @@ const Navbar = ({ handleOrderPopup }) => {
         <div className="bg-gradient-to-r from-primary to-secondary text-white ">
           <div className="container py-[2px] sm:block hidden">
             <div className="flex items-center justify-between">
-              <p className="text-sm">20% off on next booking</p>
-              <p>mobile no. +91 123456789</p>
+              <p className="text-sm">10% off on next booking</p>
+              <p>Mobile No : +66956071567</p>
             </div>
           </div>
         </div>
@@ -86,12 +90,17 @@ const Navbar = ({ handleOrderPopup }) => {
                     About
                   </NavLink>
                 </li>
-                <li className="group relative cursor-pointer">
+                <li className="py-4">
+                  <NavLink to="/Contact" activeClassName="active">
+                    Contact
+                  </NavLink>
+                </li>
+                {/* <li className="group relative cursor-pointer">
                   <a
                     href="/#home"
                     className="flex h-[72px] items-center gap-[2px]"
                   >
-                    Quick Links{" "}
+                    Contact Us{" "}
                     <span>
                       <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
                     </span>
@@ -110,7 +119,7 @@ const Navbar = ({ handleOrderPopup }) => {
                       ))}
                     </ul>
                   </div>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="flex items-center gap-4">
@@ -142,6 +151,7 @@ const Navbar = ({ handleOrderPopup }) => {
           </div>
         </div>
         <ResponsiveMenu setShowMenu={setShowMenu} showMenu={showMenu} />
+        
       </nav>
     </>
   );

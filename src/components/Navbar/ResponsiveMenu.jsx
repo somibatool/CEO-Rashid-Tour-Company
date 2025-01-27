@@ -16,7 +16,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
           <FaUserCircle size={50} />
           <div>
             <h1>Hello User</h1>
-            <h1 className="text-sm text-slate-500">Premium user</h1>
+  
           </div>
         </div>
         <nav className="mt-12">

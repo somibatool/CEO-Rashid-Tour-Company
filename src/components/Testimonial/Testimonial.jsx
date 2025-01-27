@@ -1,24 +1,26 @@
 import React from "react";
 import Slider from "react-slick";
+import userimg from "../../assets/user.jpeg"
+
 
 const testimonialData = [
   {
     id: 1,
     name: "Samuel",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/101/101",
+    img: userimg,
   },
   {
     id: 1,
     name: "John Doe",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/102/102",
+    img: userimg,
   },
   {
     id: 1,
     name: "Smith",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/103/103",
+    img: userimg,
   },
 ];
 
@@ -89,11 +91,12 @@ const Testimonial = () => {
                 return (
                   <div key={id} className="my-6">
                     <div className="flex flex-col justify-center items-center gap-4 text-center shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative">
-                      <img
-                        src={img}
-                        alt=""
-                        className="rounded-full block mx-auto"
-                      />
+                            <img
+                            src={img}
+                            alt="User Avatar"
+                            className="rounded-full block mx-auto h-24 w-24 object-cover"
+                          />
+
                       <h1 className="text-xl font-bold">{name}</h1>
                       <p className="text-gray-500 text-sm">{text}</p>
                       <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">

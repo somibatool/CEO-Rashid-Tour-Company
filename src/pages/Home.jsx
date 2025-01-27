@@ -21,23 +21,25 @@ const Home = () => {
       <div>
       <div className="h-[700px] relative">
   {/* Video Background */}
-  <video
-    autoPlay
-    loop
-    muted
-    className="absolute right-0 top-0 h-[700px] w-full object-cover z-[-1]"
-  >
-    <source src={NatureVid} type="video/mp4" />
-  </video>
+              <video
+              autoPlay
+              loop
+              muted
+              className="absolute inset-0 w-full h-full object-cover z-[-1]"
+            >
+              <source src={NatureVid} type="video/mp4" />
+            </video>
 
-  {/* Bluish Gradient Overlay */}
-  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 via-blue-900/60 to-transparent z-0"></div>
 
-  {/* Hero Section */}
-  <div className="relative z-10 flex items-center justify-center h-full text-center text-white">
-    <Hero />
-  </div>
-</div>
+
+            {/* Bluish Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-cyan-900/20 via-cyan-900/60 to-transparent z-0"></div>
+
+            {/* Hero Section */}
+            <div className="relative z-10 flex items-center justify-center h-full text-center text-white">
+              <Hero />
+            </div>
+          </div>
 
         <Places handleOrderPopup={handleOrderPopup} />
         <BannerPic img={BannerImg} />
